@@ -6,6 +6,8 @@ const BmwPage = require('../../page_objects/login/login-page');
 const UrlBmw = 'https://www.bmwusa.com/';
 const timeout = 40000;
 const zipCode = '90048';
+const username = 'uprisedigitalmarketing';
+const password = 'uprisedigital1';
 
 describe('Login', () => {
     // This hook runs only once before all tests
@@ -25,8 +27,8 @@ describe('Login', () => {
     it('should be able to login', () => {
         browser.url(loginUrl)
         // Type in username, password and click login
-        this.loginPage.UsernameTxt.setValue('uprisedigitalmarketing');
-        this.loginPage.PasswordTxt.setValue('uprisedigital1');
+        this.loginPage.UsernameTxt.setValue(username);
+        this.loginPage.PasswordTxt.setValue(password);
         this.loginPage.LoginLnk.click();
         // Wait for nasty modal to show up and click Not now button
         // this.commonPage.disableWelcomePopup();
@@ -37,7 +39,7 @@ describe('Login', () => {
     it('should be able to logout', () => {
         browser.url(loginUrl)
         // Type in username, password and click login
-        this.loginPage.login('uprisedigitalmarketing', 'uprisedigital1');
+        this.loginPage.login(username, password);
         // Click on profile icon
         this.commonPage.ProfileIconLnk.click();
         // Click on settings gear icon
