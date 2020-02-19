@@ -5,6 +5,7 @@ const ProfilePage = require('../../page_objects/profile/profile-page');
 const BmwPage = require('../../page_objects/login/login-page');
 const UrlBmw = 'https://www.bmwusa.com/';
 const timeout = 30000;
+const zipCode = '90048';
 
 describe('Login', () => {
     // This hook runs only once before all tests
@@ -52,7 +53,7 @@ describe('Login', () => {
         browser.url(UrlBmw)
         // Type in zipcode and click Submit
         this.bmwPage.ZipcodeTxt.waitForDisplayed();
-        this.bmwPage.ZipcodeTxt.setValue('90048');
+        this.bmwPage.ZipcodeTxt.setValue(zipCode);
         this.bmwPage.SubmitBtn.waitForDisplayed();
         this.bmwPage.SubmitBtn.click();
         this.bmwPage.DealerName.waitForDisplayed();
@@ -65,7 +66,7 @@ describe('Login', () => {
         browser.url(UrlBmw)
         // Type in zipcode and click Submit
         this.bmwPage.ZipcodeTxt.waitForDisplayed();
-        this.bmwPage.ZipcodeTxt.setValue('90048');
+        this.bmwPage.ZipcodeTxt.setValue(zipCode);
         this.bmwPage.SubmitBtn.waitForDisplayed();
         this.bmwPage.SubmitBtn.click();
         this.bmwPage.BuildOwn.waitForDisplayed(timeout, false, 'Build Your Own didn\'t appear');
@@ -82,7 +83,7 @@ describe('Login', () => {
         browser.url(UrlBmw)
         // Type in zipcode and click Submit
         this.bmwPage.ZipcodeTxt.waitForDisplayed();
-        this.bmwPage.ZipcodeTxt.setValue('90048');
+        this.bmwPage.ZipcodeTxt.setValue(zipCode);
         this.bmwPage.SubmitBtn.waitForDisplayed();
         this.bmwPage.SubmitBtn.click();
         this.bmwPage.BuildOwn.waitForDisplayed(timeout, false, 'Build Your Own didn\'t appear');
@@ -99,11 +100,11 @@ describe('Login', () => {
     });
 
     // This test PASSES
-    it.only('should be able to ', () => {
+    it('should be able to ', () => {
         browser.url(UrlBmw)
         // Type in zipcode and click Submit
         this.bmwPage.ZipcodeTxt.waitForDisplayed();
-        this.bmwPage.ZipcodeTxt.setValue('90048');
+        this.bmwPage.ZipcodeTxt.setValue(zipCode);
         this.bmwPage.SubmitBtn.waitForDisplayed();
         this.bmwPage.SubmitBtn.click();
         this.bmwPage.BuildOwn.waitForDisplayed(timeout, false, 'Build Your Own didn\'t appear');
