@@ -3,7 +3,6 @@ const LoginPage = require('../../page_objects/login/login-page');
 const CommonPage = require('../../page_objects/common/common-page');
 const ProfilePage = require('../../page_objects/profile/profile-page');
 const BmwPage = require('../../page_objects/login/login-page');
-const UrlBmw = 'https://www.bmwusa.com/';
 const timeout = 40000;
 const zipCode = '90048';
 const username = 'uprisedigitalmarketing';
@@ -52,7 +51,7 @@ describe('Login', () => {
 
     // This test PASSES
     it('should be able to visit bmw website and enter zipcode', () => {
-        browser.url(UrlBmw)
+        browser.url('./')
         // Type in zipcode and click Submit
         this.bmwPage.ZipcodeTxt.waitForDisplayed();
         this.bmwPage.ZipcodeTxt.setValue(zipCode);
@@ -60,12 +59,12 @@ describe('Login', () => {
         this.bmwPage.SubmitBtn.click();
         this.bmwPage.DealerName.waitForDisplayed();
         // browser.debug();
-
+        
     });
 
     // This test PASSES
     it('should be able to select BMW M8 GRAN COUPE and start build', () => {
-        browser.url(UrlBmw)
+        browser.url('./')
         // Type in zipcode and click Submit
         this.bmwPage.ZipcodeTxt.waitForDisplayed();
         this.bmwPage.ZipcodeTxt.setValue(zipCode);
@@ -82,7 +81,7 @@ describe('Login', () => {
 
     // This test PASSES
     it('should be able to select and start build of the Competition Package and select Black Sapphire Metallic color', () => {
-        browser.url(UrlBmw)
+        browser.url('./')
         // Type in zipcode and click Submit
         this.bmwPage.ZipcodeTxt.waitForDisplayed();
         this.bmwPage.ZipcodeTxt.setValue(zipCode);
@@ -103,7 +102,7 @@ describe('Login', () => {
 
     // This test PASSES
     it('should be able to ', () => {
-        browser.url(UrlBmw)
+        browser.url('./')
         // Type in zipcode and click Submit
         this.bmwPage.ZipcodeTxt.waitForDisplayed();
         this.bmwPage.ZipcodeTxt.setValue(zipCode);
