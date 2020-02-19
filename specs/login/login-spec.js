@@ -126,5 +126,3 @@ describe('Login', () => {
         this.bmwPage.DoubleSpokeConfirm.waitForDisplayed();
     });
 });
-
-0
