@@ -4,7 +4,7 @@ const CommonPage = require('../../page_objects/common/common-page');
 const ProfilePage = require('../../page_objects/profile/profile-page');
 const BmwPage = require('../../page_objects/login/login-page');
 const UrlBmw = 'https://www.bmwusa.com/';
-const timeout = 30000;
+const timeout = 40000;
 const zipCode = '90048';
 
 describe('Login', () => {
