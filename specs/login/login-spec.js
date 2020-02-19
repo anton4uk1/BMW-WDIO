@@ -58,8 +58,6 @@ describe('Login', () => {
         this.bmwPage.SubmitBtn.waitForDisplayed();
         this.bmwPage.SubmitBtn.click();
         this.bmwPage.DealerName.waitForDisplayed();
-        // browser.debug();
-        
     });
 
     // This test PASSES
