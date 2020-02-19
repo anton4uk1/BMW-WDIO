@@ -10,7 +10,7 @@ describe('Login', () => {
     // This hook runs only once before all tests
     before(() => {
         // Instantiate new Object
-        this.loginPage = new LoginPage();
+        this.loginPage = new LoginPage(); 
         this.commonPage = new CommonPage();
         this.profilePage = new ProfilePage();
         this.bmwPage = new BmwPage();
