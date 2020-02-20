@@ -3,8 +3,8 @@ const LoginPage = require('../../page_objects/login/login-page');
 const CommonPage = require('../../page_objects/common/common-page');
 const ProfilePage = require('../../page_objects/profile/profile-page');
 const BmwPage = require('../../page_objects/login/login-page');
-const timeout = 40000;
-const zipCode = '90048';
+const timeout = 50000;
+const zipCode = '90745';
 const username = 'uprisedigitalmarketing';
 const pass = 'uprisedigital1';
 
