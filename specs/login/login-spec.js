@@ -98,7 +98,7 @@ describe('Login', () => {
         this.bmwPage.BlackSapphireConfirm.waitForDisplayed();
     });
 
-    // This test PASSESS
+    // This test PASSES
     it('should be able to ', () => {
         browser.url('./')
         // Type in zipcode and click Submit
