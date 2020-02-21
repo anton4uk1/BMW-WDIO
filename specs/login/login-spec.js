@@ -78,7 +78,7 @@ describe('Login', () => {
     });
 
     // This test PASSES
-    it('should be able to select and start build of the Competition Package and select Black Sapphire Metallic color', () => {
+    it('should be able to select and start build of the Latest Competition Package and select Black color', () => {
         browser.url('./')
         // Type in zipcode and click Submit
         this.bmwPage.ZipcodeTxt.waitForDisplayed();
